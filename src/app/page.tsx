@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { UserButton } from "@clerk/nextjs"
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
               priority
             />
           </a>
+        </div>
+        <div>
+          <UserButton afterSignOutUrl="/" />
         </div>
       </div>
 
